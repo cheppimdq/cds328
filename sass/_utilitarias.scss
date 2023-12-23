@@ -1,3 +1,20 @@
+.flex-gadu {
+    @extend %flex-gadu;
+    align-items: center;
+    text-align: center;
+}
+
+.start-gadu {
+    @extend %flex-gadu;
+    align-items: start;
+}
+
+.columna-gadu {
+    @extend %flex-gadu;
+    flex-direction: column;
+    padding: 1rem;
+}
+
 /* LINKS */
 .link-negro { a { @include enlace-gadu(negro, gris-negro, gris-medio); } } 
 .link-gris { .nav-link, .nav-link:hover, .nav-link.active { @include enlace-gadu(gris-medio, blanco, gris-negro); } } 

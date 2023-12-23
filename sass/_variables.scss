@@ -26,8 +26,6 @@ $color-gadu: (
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    // justify-content: center;
-    // align-content: center;
 }
 
 @mixin enlace-gadu($color-link, $color-hover, $color-activo) {
