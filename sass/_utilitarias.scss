@@ -1,0 +1,12 @@
+/* LINKS */
+.link-negro { a { @include enlace-gadu(negro, gris-negro, gris-medio); } } 
+.link-gris { .nav-link, .nav-link:hover, .nav-link.active { @include enlace-gadu(gris-medio, blanco, gris-negro); } } 
+.link-blanco { .nav-link, .nav-link:hover, .nav-link.active { @include enlace-gadu(blanco, azul, gris-medio); } }
+
+/* FOTOS - IMAGENES */
+.foto-gadu { @extend %foto-gadu; }
+
+.footer-maps { /* MAPS FOOTER */
+    @extend %foto-gadu;
+    height: 66vh;
+}

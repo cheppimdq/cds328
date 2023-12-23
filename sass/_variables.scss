@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+$fuente-gadu: (
+    titulo: 'Open Sans, sans-serif',
+    parrafo: 'Montserrat, sans-serif',
+);
+
+$color-gadu: (
+    negro: #212121,
+    gris-negro: #585858,
+    gris-medio: #8E8E8E,
+    gris-blanco: #F4F4F4,
+    blanco: #FAFAFA,
+    amarillo: #fdf99e,
+);
+
+%foto-gadu {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+};
+
+%flex-gadu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // justify-content: center;
+    // align-content: center;
+}
+
+@mixin enlace-gadu($color-link, $color-hover, $color-activo) {
+
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: map-get($color-gadu, $color-link);
+
+    &:hover { color: map-get($color-gadu, $color-hover); };
+
+    &.active {
+        color: map-get($color-gadu, $color-activo);
+        &:hover { color: map-get($color-gadu, $color-hover); };
+    };
+
+    @media screen and (min-width: 640px) {
+        font-size: 1rem;
+    };
+
+};
