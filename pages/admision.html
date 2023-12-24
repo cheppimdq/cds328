@@ -42,9 +42,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav col-md-8">
                         <li class="nav-item active"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Admision</a></li>
                         <li class="nav-item"><a class="nav-link" href="./masoneria.html">Masonería</a></li>
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Oriente</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./ingreso.html">Ingreso</a></li>
                         <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
                     </ul>
                     <ul class="navbar-nav col-md-4 justify-content-end">
@@ -67,9 +66,9 @@
             <div class="row">
 
                 <section class="main-gadu">
+                    <div class="col-sm-12 col-md-8">
+                        <a class="link-negro" href="#"><h2>Ingresar a la Masonería</h2></a>      
 
-                    <div class="col-sm-12 col-md-8">      
-                        <h2 class="link-negro">¿Qué es la Masonería?</h2>
                         <p>La masonería es una fraternidad iniciática y filosófica que tiene sus raíces en antiguas tradiciones de constructores de templos y gremios medievales. Aunque sus orígenes exactos son objeto de debate, la masonería moderna tal como la conocemos hoy en día se desarrolló en Europa en los siglos XVII y XVIII. La masonería se basa en una serie de principios fundamentales, como la fraternidad, la libertad, la igualdad, la tolerancia y el progreso personal.</p>
                         <p>Los masones se agrupan en logias, que son comunidades locales donde se llevan a cabo reuniones, rituales y actividades educativas. Estas logias suelen seguir una estructura jerárquica y utilizan símbolos y rituales para transmitir enseñanzas morales y éticas. Uno de los aspectos distintivos de la masonería es su carácter discreto y reservado. Los masones se comprometen a guardar secretos masónicos, lo que ha generado cierto misterio y especulación en torno a la organización. Sin embargo, a lo largo de los años, muchos aspectos de la masonería se han vuelto más abiertos y accesibles al público.</p>
                     </div>
@@ -83,24 +82,121 @@
                         <p>Se fomenta la fraternidad y el apoyo mutuo entre los miembros, así como el servicio a la comunidad y la promoción del bienestar social. Es importante destacar que la masonería varía en sus formas y prácticas en diferentes partes del mundo, y cada logia tiene su propio enfoque y tradiciones específicas. Además, la masonería ha evolucionado a lo largo del tiempo y ha influido en diferentes aspectos de la sociedad, incluyendo la política, la filantropía y el desarrollo intelectual. En resumen, la masonería es una fraternidad que se basa en principios de fraternidad, libertad, igualdad y progreso personal. A través de logias locales, los masones se reúnen para estudiar, reflexionar y practicar valores éticos, buscando el crecimiento personal y el servicio a la comunidad.</p>
                     </div>
                 </section>
+
+                <section class="formulario-gadu">
+                    <form action="/ingresar-a-la-masoneria/#wpcf7-f4150-p57-o1" method="post" class="needs-validation container-fluid" novalidate>
+                        <div style="display: none;">
+                            <input type="hidden" name="_wpcf7" value="4150">
+                            <input type="hidden" name="_wpcf7_version" value="5.8.4">
+                            <input type="hidden" name="_wpcf7_locale" value="es_AR">
+                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4150-p57-o1">
+                            <input type="hidden" name="_wpcf7_container_post" value="57">
+                            <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                        </div>
+                        <h3>Solicitud de Ingreso a la Masoneria Argentina</h3>
+                        <p>Por favor, tomese unos minutos para llenar en detalle estos datos. Es muy importante que todos los datos esten completos y sean veridicos. Luego de completar y enviar la solicitud, será contactado por un representante zonal.</p>
+                    
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre (*)</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellido (*)</label>
+                            <input type="text" class="form-control" id="apellido" name="apellido" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="genero" class="form-label">Género (*)</label>
+                            <select class="form-select" id="genero" name="genero" required>
+                                <option value="">—Por favor, elegí una opción—</option>
+                                <option value="M">M</option>
+                                <option value="F">F</option>
+                                <option value="X">X</option>
+                            </select>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="domicilio" class="form-label">Domicilio (*)</label>
+                            <input type="text" class="form-control" id="domicilio" name="domicilio" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="codigo-postal" class="form-label">Código Postal (*)</label>
+                            <input type="text" class="form-control" id="codigo-postal" name="codigo-postal" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="pais" class="form-label">País de Origen (*)</label>
+                            <select class="form-select" id="pais" name="pais" required>
+                                <option value="">—Por favor, elegí una opción—</option>
+                                <!-- Lista de países aquí -->
+                            </select>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="provincia" class="form-label">Provincia donde vives (*)</label>
+                            <select class="form-select" id="provincia" name="provincia" required>
+                                <option value="">—Por favor, elegí una opción—</option>
+                                <!-- Lista de provincias aquí -->
+                            </select>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="localidad" class="form-label">Localidad donde vives (*)</label>
+                            <input type="text" class="form-control" id="localidad" name="localidad" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Tu correo electrónico (*)</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="celular" class="form-label">Celular (*)</label>
+                            <input type="tel" class="form-control" id="celular" name="celular" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="telefono-particular" class="form-label">Teléfono Particular (*)</label>
+                            <input type="tel" class="form-control" id="telefono-particular" name="telefono-particular" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="edad" class="form-label">Edad (*)</label>
+                            <input type="number" class="form-control" id="edad" name="edad" min="18" max="100" required>
+                        </div>
+                    
+                        <h3>Datos opcionales</h3>
+                    
+                        <div class="mb-3">
+                            <label for="profesion" class="form-label">Profesión</label>
+                            <input type="text" class="form-control" id="profesion" name="profesion">
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="motivo" class="form-label">Motivo por el cual desea ingresar (opcional)</label>
+                            <textarea class="form-control" id="motivo" name="motivo" rows="10"></textarea>
+                        </div>
+                    
+                        <button type="submit" class="btn btn-dark">Enviar</button>
+                        <div class="spinner-border text-dark" role="status" aria-hidden="true"></div>
+                        <div class="text-dark" aria-hidden="true"></div>
+                    </form>
+                </section>
+
             </div>
 
         </main>
-
-        <!-- MAPA -->
-        <aside class="container-fluid"> 
-            <iframe class="maps-gadu" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.189160450442!2d-57.5560231255624!3d-37.996048071930396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584deaa090697c7%3A0x89726ed7432b1cac!2sSan%20Mart%C3%ADn%203237%2C%20B7600%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1703377755719!5m2!1ses!2sar" loading="lazy"></iframe>
-        </aside>
 
         <!-- FOOTER -->
         <footer class="container-fluid">
             <div class="row footer-oscuro">
                 <ul class="navbar-nav col-sm-12 col-md-5 flex-gadu">
-                    <li class="nav-item active"><a class="nav-link" aria-current="page" href="#">Inicio</a></li>
-                    <li class="nav-item "><a class="nav-link" href="../pages/masoneria.html">Masonería</a></li>
-                    <li class="nav-item "><a class="nav-link" href="../pages/oriente.html">Oriente</a></li>
-                    <li class="nav-item "><a class="nav-link" href="../pages/ingreso.html">Ingreso</a></li>
-                    <li class="nav-item "><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Admision</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./masoneria.html">Masonería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
                 </ul>
                 <ul class="navbar-nav col-sm-12 col-md-5 flex-gadu">
                     <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/granlogiaargentina"><i class="bi bi-facebook"></i></a></li>
