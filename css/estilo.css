@@ -166,11 +166,11 @@ body p {
   align-items: center;
   text-align: center;
   justify-content: space-around;
-  color: #8E8E8E;
   background-color: #212121;
   height: 33vh;
   z-index: 1020;
 }
-.footer-oscuro h6 {
+.footer-oscuro .copy-gadu p, .footer-oscuro .copy-gadu a, .footer-oscuro .copy-gadu h6 {
   color: #585858;
+  font-size: 0.9em;
 }/*# sourceMappingURL=estilo.css.map */

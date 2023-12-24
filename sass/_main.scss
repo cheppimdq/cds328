@@ -15,6 +15,7 @@
         h1 {color: map-get($color-gadu, blanco);}
         h2 {color: map-get($color-gadu, gris-medio);}
         background: rgba(33, 33, 33, 0.8);
+        
     }
     
 }
@@ -70,9 +71,13 @@
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    color: map-get($color-gadu, gris-medio);
     background-color: map-get($color-gadu, negro);
-    h6 { color: map-get($color-gadu, gris-negro); };
+    .copy-gadu {
+        p, a, h6 {
+            color: map-get($color-gadu, gris-negro);
+            font-size: 0.9em;
+        };
+    }
     height: 33vh;
     z-index: 1020;
 }
