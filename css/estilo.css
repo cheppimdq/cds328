@@ -92,13 +92,13 @@ body p {
 }
 
 .start-gadu {
-  align-items: start;
-  text-align: center;
+  justify-content: flex-start;
 }
 
 .end-gadu {
-  align-items: end;
+  align-items: center;
   text-align: center;
+  justify-content: flex-end;
 }
 
 .columna-gadu {
@@ -133,9 +133,8 @@ body p {
 }
 
 .main-gadu {
-  align-items: center;
-  text-align: center;
-  justify-content: space-around;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .content {
@@ -156,4 +155,7 @@ body p {
   background-color: #212121;
   height: 33vh;
   z-index: 1020;
+}
+.footer-oscuro h6 {
+  color: #585858;
 }/*# sourceMappingURL=estilo.css.map */

@@ -16,14 +16,14 @@
 
 .start-gadu {
     @extend %flex-gadu;
-    align-items: start;
-    text-align: center;
+    justify-content: flex-start;
 }
 
 .end-gadu {
     @extend %flex-gadu;
-    align-items: end;
+    align-items: center;
     text-align: center;
+    justify-content: flex-end;
 }
 
 .columna-gadu {
