@@ -55,6 +55,14 @@
     background-color: map-get($color-gadu, gris-blanco);
 }
 
+// VIDEOS
+.video-gadu {
+    @extend %flex-gadu;
+    text-align: center;
+    justify-content: center;
+    justify-items: flex-start;
+}
+
 // FORMULARIO
 .formulario-gadu {
     @extend %flex-gadu;

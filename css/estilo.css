@@ -6,7 +6,7 @@
   object-fit: cover;
 }
 
-.footer-oscuro, .formulario-gadu, .article-gadu, .main-gadu, .nav-gadu, .columna-gadu, .end-gadu, .start-gadu, .flex-gadu {
+.footer-oscuro, .formulario-gadu, .video-gadu, .article-gadu, .main-gadu, .nav-gadu, .columna-gadu, .end-gadu, .start-gadu, .flex-gadu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -150,6 +150,12 @@ body p {
   justify-content: center;
   padding: 5rem;
   background-color: #F4F4F4;
+}
+
+.video-gadu {
+  text-align: center;
+  justify-content: center;
+  justify-items: flex-start;
 }
 
 .formulario-gadu {
