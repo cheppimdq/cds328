@@ -50,12 +50,11 @@
     justify-content: center;
     padding: 5rem;
     background-color: map-get($color-gadu, gris-blanco);
-
 }
 
 .content {
-    height: calc(100vh - 60px); /* Ajusta la altura según el tamaño de la barra de navegación */
-    padding-top: 60px; /* Ajusta el padding según el tamaño de la barra de navegación */
+    height: calc(100vh - 60px); // Ajusta la altura según el tamaño de la barra de navegación
+    padding-top: 60px; // Padding según el tamaño de la barra de navegación
     background-color: #FAFAFA;
 }
 
