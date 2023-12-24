@@ -1,20 +1,40 @@
-// MAIN
-.parallax {
-    @extend %flex-gadu;
-    align-items: center;
-    text-align: center;
-    background-image: url('../assets/pieter-bruegel-babel.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 93vh;
+// HEADER
+.parallax-gadu {
+    position: relative;
+    overflow: hidden;
+    height: 91vh;
+    
+    background: {
+        image: url('../assets/pieter-bruegel-babel.jpg');
+        size: cover;
+        position: center;
+        attachment: fixed;
+    }
+
+    .flex-gadu {
+        .foto-gadu { @extend %foto-gadu; }
+        h1 {color: map-get($color-gadu, blanco);}
+        h2 {color: map-get($color-gadu, gris-medio);}
+        background: rgba(33, 33, 33, 0.8);
+    }
+    
 }
 
-.navbar {
+// NAV
+.nav-gadu {
     position: sticky;
     top: 0;
     z-index: 999;
-    height: 7vh;
+    height: 9vh;
+}
+
+// MAIN
+.main-gadu {
+    @extend %flex-gadu;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+
 }
 
 .content {
@@ -23,34 +43,20 @@
     background-color: #FAFAFA;
 }
 
-// FOOTER
-.footer-gadu {
-    color: map-get($color-gadu, gris-medio);
-    background-color: map-get($color-gadu, negro);
-    z-index: 1020;
-    .flex-gadu {
-        height: 16vh;
-    }
+// ASIDE
+.maps-gadu {
+    @extend %foto-gadu;
+    height: 66vh;
 }
 
-// ASIDE
-.boton-wp { 
-    position: fixed;
-    bottom: 5vh;
-    right: 5vh;
-    background-color: map-get($color-gadu, whatsapp);
-    color: map-get($color-gadu, blanco);
-    border-radius: 50%;
-    padding: 2vh;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-    i {
-        display: block;
-        font-size: 2em;
-    }
-    &:hover {
-        background-color: map-get($color-gadu, blanco);
-        color: map-get($color-gadu, whatsapp);
-    }
+// FOOTER
+.footer-oscuro {
+    @extend %flex-gadu;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    color: map-get($color-gadu, gris-medio);
+    background-color: map-get($color-gadu, negro);
+    height: 33vh;
+    z-index: 1020;
 }
