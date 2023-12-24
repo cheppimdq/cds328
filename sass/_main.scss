@@ -1,3 +1,10 @@
+// CONTENIDO
+.content {
+    height: calc(100vh - 60px); // Ajusta la altura según el tamaño de la barra de navegación
+    padding-top: 60px; // Padding según el tamaño de la barra de navegación
+    background-color: #FAFAFA;
+}
+
 // HEADER
 .parallax-gadu {
     position: relative;
@@ -22,6 +29,9 @@
 
 // NAV
 .nav-gadu {
+    @extend %flex-gadu;
+    align-items: center;
+    align-content: center;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -37,15 +47,7 @@
     padding-bottom: 1.25rem;
 }
 
-.formulario-gadu {
-    @extend %flex-gadu;
-    form {
-        padding-top: 1.25rem;
-        padding-bottom: 1.25rem;
-    }
-    background-color: map-get($color-gadu, gris-blanco);
-}
-
+// ARTICULOS
 .article-gadu {
     @extend %flex-gadu;
     justify-content: center;
@@ -53,10 +55,14 @@
     background-color: map-get($color-gadu, gris-blanco);
 }
 
-.content {
-    height: calc(100vh - 60px); // Ajusta la altura según el tamaño de la barra de navegación
-    padding-top: 60px; // Padding según el tamaño de la barra de navegación
-    background-color: #FAFAFA;
+// FORMULARIO
+.formulario-gadu {
+    @extend %flex-gadu;
+    form {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+    background-color: map-get($color-gadu, gris-blanco);
 }
 
 // ASIDE
