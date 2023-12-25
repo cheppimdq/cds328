@@ -142,14 +142,18 @@ body p {
 .main-gadu {
   align-items: center;
   justify-content: space-between;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .article-gadu {
   justify-content: center;
   padding: 5rem;
   background-color: #F4F4F4;
+}
+.article-gadu .ancho-80 {
+  width: 80%;
+  text-align: center;
 }
 
 .video-gadu {
@@ -164,6 +168,10 @@ body p {
 .formulario-gadu form {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+.formulario-gadu form .form-control:focus {
+  border-color: #212121;
+  box-shadow: 0 0 5px 0 #212121;
 }
 
 .maps-gadu {

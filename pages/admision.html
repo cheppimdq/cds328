@@ -42,7 +42,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav col-md-8">
                         <li class="nav-item active"><a class="nav-link" href="../index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Admision</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Admisión</a></li>
                         <li class="nav-item"><a class="nav-link" href="./masoneria.html">Masonería</a></li>
                         <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
                     </ul>
@@ -65,32 +65,20 @@
 
             <div class="row">
 
+                <!-- ADMISION -->
                 <section class="main-gadu link-negro">
-
                     <div class="col-sm-12 col-md-8">
-                        <a class="link-negro" href="#"><h2>Ingresar a la Masonería</h2></a>      
-                        <p>Para ingresar a la Masonería no es necesario poseer fortuna, ni conocimientos o aptitudes intelectuales extraordinarias, ni dotes morales excepcionales. Los únicos requisitos mínimos exigidos son los siguientes: </p>
-                        <p>Ser hombre libre y de buenas costumbres; Tener una edad mínima de 18 años. Poseer inteligencia y cultura necesaria para comprender y practicar las virtudes masónicas; Contar con medios de subsistencia para sufragar sus necesidades, las de los miembros de su familia y/o personas que tuviera a su cargo.</p>
+                        <a class="link-negro" href="#"><h2>Admisión a la Masonería</h2></a>
+                        <p>Para ser iniciado Aprendiz Masón se requiere que el candidato reúna las condiciones siguientes: Tener la edad de veintidós (22) años o la de diez y ocho (18) al acreditar ser hijo de masón; Poseer inteligencia y cultura suficiente para comprender las enseñanzas masónicas y practicar sus virtudes; Declarar su adhesión a los principios y fines esenciales de la Institución. Contar con los suficientes medios económicos para sufragar sus propias necesidades y las de los familiares a su cargo; Acreditar una conducta pública y privada intachables; y Tener residencia y arraigo suficiente en el país.</p>
                     </div>
-
-                    <div class="col-sm-12 col-md-3">
-                        <img class="foto-gadu" src="../assets/logo-gl.png" alt="">
-                    </div>
-
+                    <div class="col-sm-12 col-md-3"><img class="foto-gadu" src="../assets/logo-gl.png" alt=""></div>
                 </section>
 
                 <section class="formulario-gadu">
-                    <form action="/ingresar-a-la-masoneria/#wpcf7-f4150-p57-o1" method="post" class="needs-validation container-fluid" novalidate>
-                        <div style="display: none;">
-                            <input type="hidden" name="_wpcf7" value="4150">
-                            <input type="hidden" name="_wpcf7_version" value="5.8.4">
-                            <input type="hidden" name="_wpcf7_locale" value="es_AR">
-                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4150-p57-o1">
-                            <input type="hidden" name="_wpcf7_container_post" value="57">
-                            <input type="hidden" name="_wpcf7_posted_data_hash" value="">
-                        </div>
-                        <h3>Solicitud de Ingreso a la Masoneria Argentina</h3>
-                        <p>Por favor, tomese unos minutos para llenar en detalle estos datos. Es muy importante que todos los datos esten completos y sean veridicos. Luego de completar y enviar la solicitud, será contactado por un representante zonal.</p>
+
+                    <form action="https://formspree.io/f/mwkgejkz" method="POST" id="miFormulario">
+                        <h3>Solicitud de ingreso a la Masonería Argentina</h3>
+                        <p>Por favor, tómese unos minutos para proporcionar detalladamente la información requerida. Es de suma importancia que todos los datos estén completos y sean verídicos. Una vez que haya completado y enviado la solicitud, un señor se pondrá en contacto con usted.</p>
                     
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre (*)</label>
@@ -104,12 +92,7 @@
                     
                         <div class="mb-3">
                             <label for="genero" class="form-label">Género (*)</label>
-                            <select class="form-select" id="genero" name="genero" required>
-                                <option value="">—Por favor, elegí una opción—</option>
-                                <option value="M">M</option>
-                                <option value="F">F</option>
-                                <option value="X">X</option>
-                            </select>
+                            <input type="text" class="form-control" id="genero" name="genero" required>
                         </div>
                     
                         <div class="mb-3">
@@ -124,18 +107,12 @@
                     
                         <div class="mb-3">
                             <label for="pais" class="form-label">País de Origen (*)</label>
-                            <select class="form-select" id="pais" name="pais" required>
-                                <option value="">—Por favor, elegí una opción—</option>
-                                <!-- Lista de países aquí -->
-                            </select>
+                            <input type="text" class="form-control" id="pais" name="pais" required>
                         </div>
                     
                         <div class="mb-3">
                             <label for="provincia" class="form-label">Provincia donde vives (*)</label>
-                            <select class="form-select" id="provincia" name="provincia" required>
-                                <option value="">—Por favor, elegí una opción—</option>
-                                <!-- Lista de provincias aquí -->
-                            </select>
+                            <input type="text" class="form-control" id="provincia" name="provincia" required>
                         </div>
                     
                         <div class="mb-3">
@@ -149,12 +126,7 @@
                         </div>
                     
                         <div class="mb-3">
-                            <label for="celular" class="form-label">Celular (*)</label>
-                            <input type="tel" class="form-control" id="celular" name="celular" required>
-                        </div>
-                    
-                        <div class="mb-3">
-                            <label for="telefono-particular" class="form-label">Teléfono Particular (*)</label>
+                            <label for="telefono-particular" class="form-label">Teléfono (*)</label>
                             <input type="tel" class="form-control" id="telefono-particular" name="telefono-particular" required>
                         </div>
                     
@@ -163,22 +135,18 @@
                             <input type="number" class="form-control" id="edad" name="edad" min="18" max="100" required>
                         </div>
                     
-                        <h4>Datos opcionales</h4>
-                    
-                        <div class="mb-3">
-                            <label for="profesion" class="form-label">Profesión</label>
-                            <input type="text" class="form-control" id="profesion" name="profesion">
-                        </div>
-                    
-                        <div class="mb-3">
-                            <label for="motivo" class="form-label">Motivo por el cual desea ingresar (opcional)</label>
-                            <textarea class="form-control" id="motivo" name="motivo" rows="10"></textarea>
-                        </div>
-                    
-                        <button type="submit" class="btn btn-dark">Enviar</button>
-                        <div class="spinner-border text-dark" role="status" aria-hidden="true"></div>
-                        <div class="text-dark" aria-hidden="true"></div>
+                        <button type="submit" class="btn btn-dark" id="enviarBtn">Enviar</button>
                     </form>
+
+                </section>
+
+                <!-- ADMISION -->
+                <section class="main-gadu link-negro">
+                    <div class="col-sm-12 col-md-2"><img class="foto-gadu" src="../assets/logo-taller.png" alt=""></div>
+                    <div class="col-sm-12 col-md-8">
+                        <a class="link-negro" href="#"><h5>Respetable Logia Compañeros del Silencio N° 328</h5></a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus omnis, debitis unde dicta, praesentium facilis dolorem nobis, voluptatem accusantium consequuntur quam ducimus recusandae natus? Quibusdam animi corporis fugiat repellat sequi!</p>
+                    </div>
                 </section>
 
             </div>

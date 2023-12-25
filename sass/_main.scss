@@ -43,8 +43,8 @@
     @extend %flex-gadu;
     align-items: center;
     justify-content: space-between;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 // ARTICULOS
@@ -53,6 +53,10 @@
     justify-content: center;
     padding: 5rem;
     background-color: map-get($color-gadu, gris-blanco);
+    .ancho-80 { 
+        width: 80%;
+        text-align: center;
+    }
 }
 
 // VIDEOS
@@ -69,6 +73,10 @@
     form {
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
+        .form-control:focus {
+            border-color: map-get($color-gadu, negro);
+            box-shadow: 0 0 5px 0 map-get($color-gadu, negro);
+        }
     }
     background-color: map-get($color-gadu, gris-blanco);
 }
