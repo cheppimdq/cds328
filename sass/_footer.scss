@@ -1,0 +1,28 @@
+// ASIDE
+.maps-gadu {
+    @extend %foto-gadu;
+    height: 66vh;
+}
+
+// FOOTER
+.footer-contenedor {
+    background-color: map-get($color-gadu, negro);
+
+    .footer-row {
+        height: 33vh;
+        justify-content: center;
+        align-items: center;
+
+        .footer-ul {
+            @extend %flex-gadu;
+            justify-content: space-evenly;
+            .nav-link, .nav-link:hover, .nav-link.active { @include enlace-gadu(gris-medio, blanco, gris-negro); }
+        }
+
+        .footer-texto {
+            text-align: center;
+            h6, p, a { color: map-get($color-gadu, gris-negro); }
+        }
+
+    }
+}

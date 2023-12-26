@@ -1,0 +1,32 @@
+// HEADER
+.parallax-gadu {
+    position: relative;
+    overflow: hidden;
+    height: 91vh;
+    
+    background: {
+        image: url('../assets/pieter-bruegel-babel.jpg');
+        size: cover;
+        position: center;
+        attachment: fixed;
+    }
+
+    .flex-gadu {
+        h1 {color: map-get($color-gadu, blanco);}
+        h2 {color: map-get($color-gadu, gris-medio);}
+        background: rgba(33, 33, 33, 0.8);
+        
+    }
+    
+}
+
+// NAV
+.nav-gadu {
+    @extend %flex-gadu;
+    align-items: center;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 9vh;
+}
