@@ -6,38 +6,41 @@
 } */
 
 // MAIN
-.main-gadu {
-    @extend %flex-gadu;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-}
+.seccion-main {
+    margin: 1.25rem;
+    padding: 1.25rem;
 
-// ARTICULOS
-.article-gadu {
     @extend %flex-gadu;
-    justify-content: center;
-    padding: 5rem;
-    background-color: map-get($color-gadu, gris-blanco);
-    .ancho-80 { 
-        width: 80%;
-        text-align: center;
+
+    .foto-main {
+        @extend %foto-gadu; /* Esto asume que %foto-gadu contiene estilos adicionales que deseas aplicar */
     }
+
+    a { @include enlace-gadu(negro, gris-negro, gris-medio); }
 }
 
-// VIDEOS
-.video-gadu {
-    @extend %flex-gadu;
+// ADMISION
+.articulo-admision {
+    margin: 1.25rem;
+    padding: 1.25rem;
     text-align: center;
-    justify-content: center;
-    justify-items: flex-start;
+    border-radius: 8px;
+    background-color: map-get($color-gadu, gris-blanco);
+}
+
+// VIDEO
+.tira-video {
+    margin: 1.25rem;
+    padding: 1.25rem;
+
+    @extend %flex-gadu;
+    justify-content: space-evenly; 
 }
 
 // FORMULARIO
 .formulario-gadu {
-    padding: 1.25rem;
     margin: 1.25rem;
+    padding: 1.25rem;
 
     .form-gadu {
         @extend %flex-gadu;

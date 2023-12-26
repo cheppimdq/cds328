@@ -1,7 +1,7 @@
 // LINKS
 .link-negro { a { @include enlace-gadu(negro, gris-negro, gris-medio); } } 
-.link-gris { .nav-link, .nav-link:hover, .nav-link.active { @include enlace-gadu(gris-medio, blanco, gris-negro); } } 
-.link-blanco { .nav-link, .nav-link:hover, .nav-link.active { @include enlace-gadu(blanco, azul, gris-medio); } }
+// .link-gris { .nav-link, .nav-link:hover, .nav-link.active { @include enlace-gadu(gris-medio, blanco, gris-negro); } } 
+// .link-blanco { .nav-link, .nav-link:hover, .nav-link.active { @include enlace-gadu(blanco, azul, gris-medio); } }
 
 //FOTOS
 .foto-gadu { @extend %foto-gadu; }
@@ -14,20 +14,20 @@
     justify-content: space-around;
 }
 
-.start-gadu {
-    @extend %flex-gadu;
-    justify-content: flex-start;
-}
+// .start-gadu {
+//     @extend %flex-gadu;
+//     justify-content: flex-start;
+// }
 
-.end-gadu {
-    @extend %flex-gadu;
-    align-items: center;
-    text-align: center;
-    justify-content: flex-end;
-}
+// .end-gadu {
+//     @extend %flex-gadu;
+//     align-items: center;
+//     text-align: center;
+//     justify-content: flex-end;
+// }
 
-.columna-gadu {
-    @extend %flex-gadu;
-    flex-direction: column;
-    padding: 1rem;
-}
+// .columna-gadu {
+//     @extend %flex-gadu;
+//     flex-direction: column;
+//     padding: 1rem;
+// }
