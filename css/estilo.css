@@ -6,7 +6,7 @@
   object-fit: cover;
 }
 
-.footer-oscuro, .formulario-gadu, .video-gadu, .article-gadu, .main-gadu, .nav-gadu, .columna-gadu, .end-gadu, .start-gadu, .flex-gadu {
+.footer-contenedor .footer-row .footer-ul, .formulario-gadu, .video-gadu, .article-gadu, .main-gadu, .nav-gadu, .columna-gadu, .end-gadu, .start-gadu, .flex-gadu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -141,7 +141,7 @@ body p {
 
 .main-gadu {
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
@@ -165,11 +165,11 @@ body p {
 .formulario-gadu {
   background-color: #F4F4F4;
 }
-.formulario-gadu form {
+.formulario-gadu .form-gadu {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
-.formulario-gadu form .form-control:focus {
+.formulario-gadu .form-gadu .form-control:focus {
   border-color: #212121;
   box-shadow: 0 0 5px 0 #212121;
 }
@@ -178,15 +178,39 @@ body p {
   height: 66vh;
 }
 
-.footer-oscuro {
-  align-items: center;
-  text-align: center;
-  justify-content: space-around;
+.footer-contenedor {
   background-color: #212121;
-  height: 33vh;
-  z-index: 1020;
 }
-.footer-oscuro .copy-gadu p, .footer-oscuro .copy-gadu a, .footer-oscuro .copy-gadu h6 {
+.footer-contenedor .footer-row {
+  height: 33vh;
+  justify-content: center;
+  align-items: center;
+}
+.footer-contenedor .footer-row .footer-ul {
+  justify-content: space-evenly;
+}
+.footer-contenedor .footer-row .footer-ul .nav-link, .footer-contenedor .footer-row .footer-ul .nav-link:hover, .footer-contenedor .footer-row .footer-ul .nav-link.active {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #8E8E8E;
+}
+.footer-contenedor .footer-row .footer-ul .nav-link:hover, .footer-contenedor .footer-row .footer-ul .nav-link:hover:hover, .footer-contenedor .footer-row .footer-ul .nav-link.active:hover {
+  color: #FAFAFA;
+}
+.footer-contenedor .footer-row .footer-ul .nav-link.active, .footer-contenedor .footer-row .footer-ul .nav-link:hover.active, .footer-contenedor .footer-row .footer-ul .nav-link.active.active {
   color: #585858;
-  font-size: 0.9em;
+}
+.footer-contenedor .footer-row .footer-ul .nav-link.active:hover, .footer-contenedor .footer-row .footer-ul .nav-link:hover.active:hover, .footer-contenedor .footer-row .footer-ul .nav-link.active.active:hover {
+  color: #FAFAFA;
+}
+@media screen and (min-width: 640px) {
+  .footer-contenedor .footer-row .footer-ul .nav-link, .footer-contenedor .footer-row .footer-ul .nav-link:hover, .footer-contenedor .footer-row .footer-ul .nav-link.active {
+    font-size: 1rem;
+  }
+}
+.footer-contenedor .footer-row .footer-texto {
+  text-align: center;
+}
+.footer-contenedor .footer-row .footer-texto h6, .footer-contenedor .footer-row .footer-texto p, .footer-contenedor .footer-row .footer-texto a {
+  color: #585858;
 }/*# sourceMappingURL=estilo.css.map */

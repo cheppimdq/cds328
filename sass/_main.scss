@@ -42,7 +42,7 @@
 .main-gadu {
     @extend %flex-gadu;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
@@ -70,7 +70,7 @@
 // FORMULARIO
 .formulario-gadu {
     @extend %flex-gadu;
-    form {
+    .form-gadu {
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
         .form-control:focus {
@@ -88,18 +88,24 @@
 }
 
 // FOOTER
-.footer-oscuro {
-    @extend %flex-gadu;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
+.footer-contenedor {
     background-color: map-get($color-gadu, negro);
-    .copy-gadu {
-        p, a, h6 {
-            color: map-get($color-gadu, gris-negro);
-            font-size: 0.9em;
-        };
+
+    .footer-row {
+        height: 33vh;
+        justify-content: center;
+        align-items: center;
+
+        .footer-ul {
+            @extend %flex-gadu;
+            justify-content: space-evenly;
+            .nav-link, .nav-link:hover, .nav-link.active { @include enlace-gadu(gris-medio, blanco, gris-negro); }
+        }
+
+        .footer-texto {
+            text-align: center;
+            h6, p, a { color: map-get($color-gadu, gris-negro); }
+        }
+
     }
-    height: 33vh;
-    z-index: 1020;
 }
