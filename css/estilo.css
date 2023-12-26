@@ -6,7 +6,7 @@
   object-fit: cover;
 }
 
-.footer-contenedor .footer-row .footer-ul, .formulario-gadu, .video-gadu, .article-gadu, .main-gadu, .nav-gadu, .columna-gadu, .end-gadu, .start-gadu, .flex-gadu {
+.footer-contenedor .footer-row .footer-ul, .formulario-gadu .form-gadu, .video-gadu, .article-gadu, .main-gadu, .nav-gadu, .columna-gadu, .end-gadu, .start-gadu, .flex-gadu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -163,11 +163,13 @@ body p {
 }
 
 .formulario-gadu {
+  padding: 1.25rem;
+  margin: 1.25rem;
   background-color: #F4F4F4;
+  border-radius: 8px;
 }
 .formulario-gadu .form-gadu {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  justify-content: space-evenly;
 }
 .formulario-gadu .form-gadu .form-control:focus {
   border-color: #212121;

@@ -69,16 +69,22 @@
 
 // FORMULARIO
 .formulario-gadu {
-    @extend %flex-gadu;
+    padding: 1.25rem;
+    margin: 1.25rem;
+
     .form-gadu {
-        padding-top: 1.25rem;
-        padding-bottom: 1.25rem;
+        @extend %flex-gadu;
+        justify-content: space-evenly;
+
         .form-control:focus {
             border-color: map-get($color-gadu, negro);
             box-shadow: 0 0 5px 0 map-get($color-gadu, negro);
         }
     }
+
     background-color: map-get($color-gadu, gris-blanco);
+    border-radius: 8px;
+
 }
 
 // ASIDE

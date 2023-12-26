@@ -76,66 +76,73 @@
 
                 <section class="formulario-gadu">
 
-                    <form class="form-gadu" action="https://formspree.io/f/mwkgejkz" method="POST" id="miFormulario">
+                    <div>
                         <h3>Solicitud de ingreso a la Masonería Argentina</h3>
-                        <p>Por favor, tómese unos minutos para proporcionar detalladamente la información requerida. Es de suma importancia que todos los datos estén completos y sean verídicos. Una vez que haya completado y enviado la solicitud, un señor se pondrá en contacto con usted.</p>
-                    
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre (*)</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        <p>Por favor, tómese unos minutos para proporcionar detalladamente la información requerida. Es de suma importancia que todos los datos estén completos y sean verídicos. Una vez que haya completado y enviado la solicitud, una persona se pondrá en contacto con usted.</p>
+                    </div>
+
+                    <form class="form-gadu" action="https://formspree.io/f/mwkgejkz" method="POST" id="miFormulario">
+
+                        <div class="col-sm-12 col-md-5">
+
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre (*)</label>
+                                <input class="form-control form-control-sm" type="text" id="nombre" name="nombre" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellido (*)</label>
+                                <input class="form-control form-control-sm" type="text" id="apellido" name="apellido" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="genero" class="form-label">Género (*)</label>
+                                <input class="form-control form-control-sm" type="text" id="genero" name="genero" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="edad" class="form-label">Edad (*)</label>
+                                <input class="form-control form-control-sm" type="number" id="edad" name="edad" min="18" max="100" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="pais" class="form-label">País de Origen (*)</label>
+                                <input class="form-control form-control-sm" type="text" id="pais" name="pais" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-dark" id="enviarBtn">Enviar</button>
+
                         </div>
-                    
-                        <div class="mb-3">
-                            <label for="apellido" class="form-label">Apellido (*)</label>
-                            <input type="text" class="form-control" id="apellido" name="apellido" required>
+
+                        <div class="col-sm-12 col-md-5">
+
+                            <div class="mb-3">
+                                <label for="provincia" class="form-label">Provincia donde vives (*)</label>
+                                <input class="form-control form-control-sm" type="text" id="provincia" name="provincia" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="localidad" class="form-label">Localidad donde vives (*)</label>
+                                <input class="form-control form-control-sm" type="text" id="localidad" name="localidad" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="domicilio" class="form-label">Domicilio (*)</label>
+                                <input class="form-control form-control-sm" type="text" id="domicilio" name="domicilio" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="telefono-particular" class="form-label">Teléfono (*)</label>
+                                <input class="form-control form-control-sm" type="tel" id="telefono-particular" name="telefono-particular" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Tu correo electrónico (*)</label>
+                                <input class="form-control form-control-sm" type="email" id="email" name="email" required>
+                            </div>
+
                         </div>
-                    
-                        <div class="mb-3">
-                            <label for="genero" class="form-label">Género (*)</label>
-                            <input type="text" class="form-control" id="genero" name="genero" required>
-                        </div>
-                    
-                        <div class="mb-3">
-                            <label for="domicilio" class="form-label">Domicilio (*)</label>
-                            <input type="text" class="form-control" id="domicilio" name="domicilio" required>
-                        </div>
-                    
-                        <div class="mb-3">
-                            <label for="codigo-postal" class="form-label">Código Postal (*)</label>
-                            <input type="text" class="form-control" id="codigo-postal" name="codigo-postal" required>
-                        </div>
-                    
-                        <div class="mb-3">
-                            <label for="pais" class="form-label">País de Origen (*)</label>
-                            <input type="text" class="form-control" id="pais" name="pais" required>
-                        </div>
-                    
-                        <div class="mb-3">
-                            <label for="provincia" class="form-label">Provincia donde vives (*)</label>
-                            <input type="text" class="form-control" id="provincia" name="provincia" required>
-                        </div>
-                    
-                        <div class="mb-3">
-                            <label for="localidad" class="form-label">Localidad donde vives (*)</label>
-                            <input type="text" class="form-control" id="localidad" name="localidad" required>
-                        </div>
-                    
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Tu correo electrónico (*)</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                    
-                        <div class="mb-3">
-                            <label for="telefono-particular" class="form-label">Teléfono (*)</label>
-                            <input type="tel" class="form-control" id="telefono-particular" name="telefono-particular" required>
-                        </div>
-                    
-                        <div class="mb-3">
-                            <label for="edad" class="form-label">Edad (*)</label>
-                            <input type="number" class="form-control" id="edad" name="edad" min="18" max="100" required>
-                        </div>
-                    
-                        <button type="submit" class="btn btn-dark" id="enviarBtn">Enviar</button>
+
                     </form>
 
                 </section>
